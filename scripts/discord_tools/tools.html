@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Tools</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Napis na górze ekranu -->
+    <div class="header-title">Dark Tools</div>
+
+    <!-- Informacja o twórcy skryptu -->
+    <div class="creator-info" id="creator-info">
+        <p id="creator-name">Twórca:</p>
+        <p id="release-date">Data wydania:</p>
+        <p>
+            <a href="https://discord.gg/9yfCW64W52" target="_blank">Discord</a> |
+            <a href="https://www.instagram.com/michalr192//" target="_blank">Instagram</a> |
+            <i class="fa-solid fa-volume"></i>  
+        </p>
+    </div>
+
+    <!-- Zdjęcie na środku ekranu -->
+    <div class="center-image">
+        <img id="main-image" src="tools.jpg" alt="Main Image">
+    </div>
+
+    <!-- Przycisk pobierania -->
+    <div class="download-container">
+        <a href="Dark_Tools.rar" download class="download-button">Download</a>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById('creator-name').innerText = 'Twórca: szajz3er_';
+            document.getElementById('release-date').innerText = 'Data wydania: 21 luty 2025';
+
+            let image = document.getElementById('main-image');
+            image.style.width = '700px';
+
+            image.addEventListener('click', function() {
+                if (image.style.width === '700px') {
+                    image.style.width = '1200px';
+                } else {
+                    image.style.width = '700px';
+                }
+            });
+        });
+    </script>
+
+<!-- Przycisk cofnięcia -->
+<div class="back-container">
+    <a href="../../dashboard.html" class="back-button">Cofnij</a>
+</div>
+
+<div class="table-container">
+    <table class="text-table">
+        <thead>
+            <tr>
+                <th class="table-title">Informacje</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Poradnik dotyczący uruchomienia znajdziesz w pliku ReadMe</td>
+            </tr>
+            <tr>
+                <td>Link do pobrania: <a href="Dark_Tools.rar" download>Dark Tools</a></td>
+            </tr>
+            <tr>
+                <td>Wersja: 1.0</td>
+            </tr>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Register</h2>
+        <div class="input-group">
+            <input type="text" id="new-username" placeholder="Username">
+            <span class="icon">👤</span>
+        </div>
+        <div class="input-group">
+            <input type="email" id="email" placeholder="Email">
+            <span class="icon">📧</span>
+        </div>
+        <div class="input-group">
+            <input type="password" id="new-password" placeholder="Password">
+            <span class="icon">🔒</span>
+        </div>
+        <button onclick="register()">Register</button>
+        <p id="register-msg"></p>
+        <p>Already have an account? <a href="index.html">Login</a></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+/* Pasek boczny po lewej stronie */
+.sidebar {
+    width: 200px;
+    background-color: rgba(51, 51, 51, 0.8);
+    color: #fff;
+    padding-top: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 2px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    justify-content: flex-start;
+}
+
+/* Przycisk zakładki */
+.sidebar button {
+    width: 180px;
+    padding: 10px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Efekt hover dla przycisków */
+.sidebar button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
